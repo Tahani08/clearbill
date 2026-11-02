@@ -1,7 +1,5 @@
 # Clearbill
 
-# ClearBill
-
 ClearBill helps people find charges on a medical bill that are worth questioning. Upload an itemized bill (a photo or a CSV) and it flags possible duplicate charges, totals that don't add up, and bundled services that may be billed twice.
 
 ![ClearBill results screen](docs/screenshot.png)
