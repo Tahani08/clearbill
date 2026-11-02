@@ -6,9 +6,11 @@ from .db import Base, engine, get_db
 from .models import Bill, LineItem
 from .parsing import BillParseError, dollars_to_cents, parse_csv
 from .rules import audit_bill
+from .routes_ai import router as ai_router
 
 app = FastAPI(title="ClearBill API")
 Base.metadata.create_all(engine)
+app.include_router(ai_router)
 
 MAX_UPLOAD_BYTES = 1_000_000
 
